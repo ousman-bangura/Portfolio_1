@@ -1,4 +1,12 @@
-/* Portfolio v2 - Clean, Vibrant, and Responsive */
+/* =========================================================
+   Portfolio v2 - Clean, Vibrant, and Responsive
+   Author: Ousman Bangura
+   Description: Responsive personal portfolio website stylesheet
+   ========================================================= */
+
+/* =========================================================
+   ROOT VARIABLES & BASE SETTINGS
+   ========================================================= */
 :root {
   --primary: #1e40af;
   --accent: #0ea5e9;
@@ -24,6 +32,9 @@ body {
   margin: auto;
 }
 
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
 .header {
   background: var(--primary);
   color: white;
@@ -61,6 +72,9 @@ body {
   color: var(--accent);
 }
 
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
 .hero {
   background: linear-gradient(120deg, var(--accent), var(--primary));
   color: white;
@@ -75,7 +89,10 @@ body {
   margin-bottom: 1rem;
 }
 
-.about h2, .projects h2, .contact h2 {
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
+.about h2 {
   text-align: center;
   color: var(--primary);
 }
@@ -96,8 +113,16 @@ body {
   font-size: 0.95rem;
 }
 
+/* =========================================================
+   PROJECTS SECTION
+   ========================================================= */
 .projects {
   padding: 2rem 0;
+}
+
+.projects h2 {
+  text-align: center;
+  color: var(--primary);
 }
 
 .project-grid {
@@ -123,6 +148,9 @@ body {
   margin-top: 0;
 }
 
+/* =========================================================
+   BUTTONS
+   ========================================================= */
 .btn {
   display: inline-block;
   background: var(--accent);
@@ -137,8 +165,16 @@ body {
   background: var(--primary);
 }
 
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
 .contact {
   padding: 2rem 0;
+}
+
+.contact h2 {
+  text-align: center;
+  color: var(--primary);
 }
 
 .contact ul {
@@ -151,6 +187,9 @@ body {
   text-decoration: none;
 }
 
+/* =========================================================
+   FOOTER
+   ========================================================= */
 .footer {
   background: var(--primary);
   color: white;
@@ -159,11 +198,14 @@ body {
   margin-top: 2rem;
 }
 
-/* Responsive tweaks */
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
 @media (max-width: 700px) {
   .header__content {
     flex-direction: column;
   }
+
   .nav__list {
     flex-wrap: wrap;
     justify-content: center;
