@@ -211,3 +211,31 @@ body {
     justify-content: center;
   }
 }
+/* =========================================================
+   ENHANCEMENTS & ANIMATIONS
+   ========================================================= */
+.project-card:hover .btn {
+  background: var(--accent);
+  transform: scale(1.05);
+}
+
+footer {
+  border-top: 2px solid #0ea5e9;
+}
+
+a:focus, button:focus {
+  outline: 2px dashed var(--accent);
+  outline-offset: 3px;
+}
+input, textarea {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color var(--transition);
+}
+input:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+} 
